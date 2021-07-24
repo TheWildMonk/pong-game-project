@@ -23,8 +23,6 @@ computer_paddle.goto(350, 0)
 screen.listen()
 screen.onkey(user_paddle.up, "w")
 screen.onkey(user_paddle.down, "s")
-# screen.onkey(computer_paddle.up, "Up")
-# screen.onkey(computer_paddle.down, "Down")
 
 
 end_game = False
