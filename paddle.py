@@ -4,7 +4,6 @@ from turtle import Turtle
 class Paddle(Turtle):
     def __init__(self):
         super().__init__()
-        self.paddle_object = []
         self.shape("square")
         self.color("white")
         self.penup()
