@@ -54,6 +54,5 @@ while not end_game:
 
 
 
-
 # Screen exit
 screen.exitonclick()
