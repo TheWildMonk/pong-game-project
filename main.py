@@ -23,20 +23,15 @@ computer_paddle.goto(350, 0)
 screen.listen()
 screen.onkey(user_paddle.up, "w")
 screen.onkey(user_paddle.down, "s")
-# screen.onkey(computer_paddle.up, "Up")
-# screen.onkey(computer_paddle.down, "Down")
+screen.onkey(computer_paddle.up, "Up")
+screen.onkey(computer_paddle.down, "Down")
 
 
 end_game = False
 while not end_game:
     screen.update()
     time.sleep(0.01)
-    if computer_paddle.ycor() >= 250 or computer_paddle.ycor() <= -250:
-        computer_paddle.left(180)
-        computer_paddle.forward(1)
-    else:
-        computer_paddle.forward(1)
-
+    
 
 
 
