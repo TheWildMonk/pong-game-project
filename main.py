@@ -37,7 +37,8 @@ while not end_game:
     time.sleep(0.1)
     screen.update()
     pong_ball.move()
-    
+    if pong_ball.ycor() > 280 or pong_ball.ycor() < -280:
+        pong_ball.bounce()
 
 
 
