@@ -2,6 +2,7 @@ from turtle import Screen
 from paddle import Paddle
 from ball import Ball
 import time
+import random
 
 
 # Screen object definition
@@ -33,8 +34,9 @@ screen.onkey(user2_paddle.down, "Down")
 
 end_game = False
 while not end_game:
+    time.sleep(0.1)
     screen.update()
-    time.sleep(0.01)
+    pong_ball.move()
     
 
 
